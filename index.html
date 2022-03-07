@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>-->Include these three scripts into your HTML to add React!</h1>
+    <!--Use HTML style comments here -->
+
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return (
+          // JavaScript style comments here
+          <h1>
+            {/*JSX comments like this, betwixt the curlies*/}
+            React added parenthesis because the sentence was too long. I tried
+            to add another h1 element but I got an error saying JSX expressions
+            must have one parent element. Only one element allowed in the return
+            statement. React uses three different comment styles: HTML, JS, and
+            JSX.
+          </h1>
+        );
+      }
+
+      ReactDOM.render(<Hello />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
